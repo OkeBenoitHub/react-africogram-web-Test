@@ -20,3 +20,25 @@ window.sendVerificationCode = function(email) {
       showDialogBox("verifyAccountModal",false,false,false);
   }
 };
+// verify account process
+window.verifyAccountProcess = function(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender,verificationCode) {
+    $(".verifyAccount").click(function() {
+        var inputCode = $(".verifyCode").val().trim();
+        if (inputCode == verificationCode) {
+            // verification code matches
+            $("#verifyAccountBox").removeClass("error").removeClass("success").addClass("loading");
+            /* try to sign up new user */
+            signUpNewUserForAfricogram(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender);
+        } else {
+            // verification code incorrect
+            $("#verifyAccountBox").removeClass("success").addClass("error");
+        }
+    });
+    // re-send verification code
+    $(".resendCode").click(function() {
+        $("#verifyAccountBox").removeClass("error").addClass("success");
+        $(".verifyAccountModal.modal").modal("hide");
+        $("body").removeClass("verifyCodeProcess");
+        sendVerificationCode(email);
+    });
+  };
