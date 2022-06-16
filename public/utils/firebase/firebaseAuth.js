@@ -21,6 +21,11 @@ window.checkForUserAuth = function() {
              window.email = user.email;
              window.uid = user.uid;
              window.firstName = Cookies.get('firstName');
+             window.lastName = Cookies.get('lastName');
+             window.birthMonth = Cookies.get('birthMonth');
+             window.birthDay = Cookies.get('birthDay');
+             window.birthYear = Cookies.get('birthYear');
+             window.gender = Cookies.get('gender');
             getUserDataById(window.uid).then((doc) => {
                 if (doc.exists) {
                      var data = doc.data();
@@ -156,6 +161,7 @@ window.signInUserToAfricogram = function signInUserToAfricogram(emailLog,passwor
                      birthYear,
                      gender) {
         window.auth.createUserWithEmailAndPassword(email, password).then(userCredential => {
+            /*
             var user = userCredential.user;
             var userId = user.uid;
             var userData = {
@@ -179,7 +185,18 @@ window.signInUserToAfricogram = function signInUserToAfricogram(emailLog,passwor
                 $("#signUpBox").removeClass("loading");
                 $("#signUpBox").addClass("error");
                 $("#signUpBox #errorMessage p").text("An unexpected error occurred!");
-            });
+            });*/
+            var user = userCredential.user;
+            var userId = user.uid;
+            Cookies.set('userId', userId);
+            Cookies.set('firstName', firstName);
+            Cookies.set('lastName', lastName);
+            Cookies.set('birthMonth', birthMonth);
+            Cookies.set('birthDay', birthDay);
+            Cookies.set('birthYear', birthYear);
+            Cookies.set('gender', gender);
+            Cookies.set('email', email);
+            location.reload();
         },(error) => {
                 $(".verifyAccountModal.modal").modal("hide");
                 $("#signUpButton").prop('disabled', true);

@@ -296,7 +296,6 @@ window.signUpProcess = function signUpProcess() {
             $("#signUpBox #errorMessage p").text("You must agree to terms and service");
             return false;
         }
-        Cookies.set('firstName', firstName);
         // send verification code
         sendVerificationCode(email);
         verifyAccountProcess(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender,verificationCode);

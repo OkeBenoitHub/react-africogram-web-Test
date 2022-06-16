@@ -27,9 +27,24 @@ window.getStartedProcess = function() {
             countryBornCode: window.countryBornCode,
             countryLiveCode: window.countryLiveCode
         }
+        var userData = {
+            userId: window.uid,
+            firstName: window.firstName,
+            lastName: window.lastName,
+            birthMonth: window.birthMonth,
+            birthDay: window.birthDay,
+            birthYear: window.birthYear,
+            gender: window.gender,
+            email: window.email,
+            profilePic: "",
+            lastOnlineTime: Date.now(),
+            lastOnlineDate: moment().format('MMMM Do YYYY, h:mm:ss a'),
+            countryBornCode: window.countryBornCode,
+            countryLiveCode: window.countryLiveCode
+       };
         // push country born and live to Users collection
         $(".addProfilePhoto").addClass("loading");
-        addDocumentToCollectionById("Users",window.uid,countryDocData).then(() => {
+        addDocumentToCollectionById("Users",window.uid,userData).then(() => {
             if(file != "") {
                 // save profile picture
                 uploadFile(file,window.uid + "/profile","image/jpeg").then(snapshot => snapshot.ref.getDownloadURL()).then((url) => {
