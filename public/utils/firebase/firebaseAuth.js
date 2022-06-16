@@ -156,10 +156,9 @@ window.signInUserToAfricogram = function signInUserToAfricogram(emailLog,passwor
                      birthYear,
                      gender) {
         window.auth.createUserWithEmailAndPassword(email, password).then(userCredential => {
-             var user = userCredential.user;
-             var userId = user.uid;
-             alert(userId);
-             var userData = {
+            var user = userCredential.user;
+            var userId = user.uid;
+            var userData = {
                  userId: userId,
                  firstName: firstName,
                  lastName: lastName,
@@ -171,33 +170,33 @@ window.signInUserToAfricogram = function signInUserToAfricogram(emailLog,passwor
                  profilePic: "",
                  lastOnlineTime: Date.now(),
                  lastOnlineDate: moment().format('MMMM Do YYYY, h:mm:ss a')
-             };
-             addDocumentToCollectionById("Users",userId,userData).then(() => {
+            };
+            addDocumentToCollectionById("Users",userId,userData).then(() => {
                  location.reload();
-             }).catch(() => {
+            }).catch(() => {
                 $(".verifyAccountModal.modal").modal("hide");
                 $("#signUpButton").prop('disabled', true);
                 $("#signUpBox").removeClass("loading");
                 $("#signUpBox").addClass("error");
                 $("#signUpBox #errorMessage p").text("An unexpected error occurred!");
-             });
-             },(error) => {
-                 $(".verifyAccountModal.modal").modal("hide");
-                 $("#signUpButton").prop('disabled', true);
-                 $("#signUpBox").removeClass("loading");
+            });
+        },(error) => {
+                $(".verifyAccountModal.modal").modal("hide");
+                $("#signUpButton").prop('disabled', true);
+                $("#signUpBox").removeClass("loading");
                  /* Handle Errors here. */
                  var errorCode = error.code;
                  var errorMessage = error.message;
                  /* Check if email belongs to existing member */
-                 if(errorCode === 'auth/email-already-in-use') {
-                     $("#signUpBox").addClass("error");
-                     $("#signUpBox").find(".email").parent(".field").addClass("error");
-                     $("#signUpBox #errorMessage p").text("This email already exists in our system.");
-                     $("#signUpBox").find(".email").trigger("focus");
-                     return false;
-                 } else {
-                     $("#signUpBox").addClass("error");
-                     $("#signUpBox #errorMessage p").text(errorMessage);
-                 }
-             });
+                if(errorCode === 'auth/email-already-in-use') {
+                    $("#signUpBox").addClass("error");
+                    $("#signUpBox").find(".email").parent(".field").addClass("error");
+                    $("#signUpBox #errorMessage p").text("This email already exists in our system.");
+                    $("#signUpBox").find(".email").trigger("focus");
+                    return false;
+                } else {
+                    $("#signUpBox").addClass("error");
+                    $("#signUpBox #errorMessage p").text(errorMessage);
+                }
+        });
 }
