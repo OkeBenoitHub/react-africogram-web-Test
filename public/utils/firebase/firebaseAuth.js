@@ -161,31 +161,6 @@ window.signInUserToAfricogram = function signInUserToAfricogram(emailLog,passwor
                      birthYear,
                      gender) {
         window.auth.createUserWithEmailAndPassword(email, password).then(userCredential => {
-            /*
-            var user = userCredential.user;
-            var userId = user.uid;
-            var userData = {
-                 userId: userId,
-                 firstName: firstName,
-                 lastName: lastName,
-                 birthMonth: birthMonth,
-                 birthDay: birthDay,
-                 birthYear: birthYear,
-                 gender: gender,
-                 email: email,
-                 profilePic: "",
-                 lastOnlineTime: Date.now(),
-                 lastOnlineDate: moment().format('MMMM Do YYYY, h:mm:ss a')
-            };
-            addDocumentToCollectionById("Users",userId,userData).then(() => {
-                 location.reload();
-            }).catch(() => {
-                $(".verifyAccountModal.modal").modal("hide");
-                $("#signUpButton").prop('disabled', true);
-                $("#signUpBox").removeClass("loading");
-                $("#signUpBox").addClass("error");
-                $("#signUpBox #errorMessage p").text("An unexpected error occurred!");
-            });*/
             var user = userCredential.user;
             var userId = user.uid;
             Cookies.set('userId', userId);
@@ -198,8 +173,6 @@ window.signInUserToAfricogram = function signInUserToAfricogram(emailLog,passwor
             Cookies.set('email', email);
             location.reload();
         },(error) => {
-                $(".verifyAccountModal.modal").modal("hide");
-                $("#signUpButton").prop('disabled', true);
                 $("#signUpBox").removeClass("loading");
                  /* Handle Errors here. */
                  var errorCode = error.code;

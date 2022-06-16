@@ -122,7 +122,7 @@ function MiddleContainer() {
                   <div class="w3-card w3-round w3-white" style={{paddingBottom: "13px"}}>
                       <div class="w3-container w3-padding">
                           <h6 class="w3-opacity">What's on your mind?</h6>
-                          <p contenteditable="true" class="w3-border w3-padding"></p>
+                          <p contenteditable="true" class="w3-border w3-padding" id="feedPostEditable"></p>
                           <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i> Post</button>
                       </div>
                   </div>

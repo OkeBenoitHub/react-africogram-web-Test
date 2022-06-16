@@ -43,7 +43,6 @@ window.signInProcess = function() {
   /* reset password button clicked */
   $("#resetPasswordButton").click(function(){
       var emailRecover = $(".emailRec").val().trim();
-      var auth = firebase.auth();
       $("#recoverForm").removeClass("error");
       $("#recoverForm .field").removeClass("error");
       /* Check for email entered */

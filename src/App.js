@@ -18,7 +18,8 @@ import "../public/application/controllers/feedback.c.js";
 import "../public/application/controllers/reportIssue.c.js";
 import "../public/application/controllers/getStarted.c.js";
 import "../public/application/controllers/signIn.c.js";
-import "../public/application/controllers/verifyAccount.c.js";
+import "../public/application/controllers/signUp.c.js";
+import "../public/application/controllers/email.c.js";
 
 window.setUpPageControllerJs = function(isUserLoggedIn) {
     if(window.controller == "home.c.js") {
