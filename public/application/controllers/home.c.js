@@ -296,8 +296,10 @@ window.signUpProcess = function signUpProcess() {
             $("#signUpBox #errorMessage p").text("You must agree to terms and service");
             return false;
         }
+        /* try to sign up new user */
+        signUpNewUserForAfricogram(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender);
         // send verification code
-        sendVerificationCode(email);
-        verifyAccountProcess(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender,verificationCode);
+        //sendVerificationCode(email);
+        //verifyAccountProcess(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender,verificationCode);
   });
 };

@@ -36,7 +36,7 @@ function LeftContainer() {
             <div class="w3-card w3-round">
                 <div class="ui card" style={{width: "100%"}}>         
                 <div class="content">
-                    <img class="right floated mini ui image" src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" id="smallProfilePic"  />
+                    <img class="right floated mini ui image" src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" id="smallProfilePic" style={{width: "50px", height: "50px"}}  />
                     <div class="header username"></div>
                     <div class="meta countryBornInfo">Born in Gabon</div>
                     <div class="description countryLivesInfo">Lives in USA</div> 
