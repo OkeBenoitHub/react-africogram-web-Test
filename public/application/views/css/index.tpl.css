@@ -1,0 +1,68 @@
+/****** INDEX MAIN *********/
+.main {
+  width: 100%;
+}
+/* right main headline  */
+#signUpHeadline {
+  font-weight: bold;
+  background-color: #fff;
+  text-align: center;
+  border-color: #b6c2b7;
+  color: #b6c2b7;
+}
+/* left main headline */
+#leftMainline {
+  background-color: #fff;
+  border-color: #aad8b0;
+  font-weight: bold;
+  color: #75a478;
+  text-align: center;
+}
+.ui.headline.block {
+  margin-top: 0;
+  background-color: #fff;
+  padding: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.ui.headline .subheadline {
+  color: #9499b7;
+  font-weight:normal;
+  line-break: normal;
+  font-size: 100%;
+  padding: 0;
+  margin:0;
+}
+#leftBox {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.africaMap {
+  width: 80%;
+}
+#signUpForm {
+  margin-top: 16px;
+}
+#signUpForm input,
+#signInForm input {
+  color: #777;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #d4d4d5;
+}
+.captcha {
+  position: relative;
+  top: -4px;
+  width: 50%;
+}
+#signUpBox #errorMessage {
+  padding: 8px;
+}
+@-moz-document url-prefix() {
+  /* mozilla */
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  /* safari and chrome */
+  
+}

@@ -1,0 +1,10 @@
+/* screen size greater than 770px   */
+@media only screen and (max-width: 770px) {
+   #mainNav {display: none;}
+   #openNav {display: inline-block;}
+}
+/* screen size lesser than 770px  */
+@media only screen and (min-width: 770px) {
+   #mainNav {display: block;}
+   #openNav {display: none;}
+}

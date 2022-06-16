@@ -1,0 +1,51 @@
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.menuText {
+  color:#5d768d;
+  font-weight: bold;
+  margin-left: 16px;
+  position:relative;
+  top: 2px;
+}
+.ui.label {
+  position:relative;
+  top: 5px;
+}
+#LeftContainerCard .item img {width: 32px;}
+#LeftContainerCard .menu {
+  top: 65px;
+  width: 100%;
+  left: 15px;
+  height: auto;  
+}
+#smallProfilePic {
+   position:absolute;
+   right:15px;
+}
+@media only screen and (max-width: 1020px) {
+    .item span {font-size: 12px;}
+    #LeftContainerCard .item img {width: 24px;}
+}
+/* screen size lesser than 930 pixels */
+@media only screen and (max-width: 930px) {
+  #MiddleContainer,#LeftContainer,#RightContainer {
+      width: 100%;
+      margin: 0 auto;
+  }
+  #MiddleContainer { margin-top: 16px;}
+  .item span {font-size: 1rem;}
+  #LeftContainerCard .item img {width: 32px;}
+}
+.homeFooter a {
+  text-decoration: none;
+  color: #fff;
+}
+.homeFooter a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  font-family: monospace;
+  text-transform: uppercase;
+}

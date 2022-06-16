@@ -1,0 +1,28 @@
+/****** INDEX FOOT *********/
+#footerBox {
+  position:relative;
+  border:1px solid #d4d4d5;
+  margin:0;
+  border-top: 0;
+  margin-bottom: 13px;
+  background:#fafafa;
+}
+
+.terms,.privacy {
+  color: gray;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+#footerBox .item .footLink {
+  padding: 8px;
+  margin: 6px;
+}
+
+#footerBox .item .footLink:hover {
+  background: #c8e6c9;
+}
+
+.privacy:hover,.terms:hover {
+  color: grey;
+}

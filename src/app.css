@@ -1,0 +1,70 @@
+/*********************** App General styles ******************/
+body {
+  background-color: #eee;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+}
+#jsDidabledBox {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* centered any item */
+.centeredVH,
+#centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.centeredV {
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.modal-backdrop {
+  opacity: 0.5 !important;
+}
+hr.colored {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid #9499b7;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.link {
+  color: grey;
+  margin:0;
+  cursor:pointer;
+  padding: 0;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+.link:hover {
+  text-decoration: underline;
+}
+/* screen size greater than 900 pixels */
+@media only screen and (min-width: 900px) {
+  .responsiveBox {
+    width: 900px;
+    margin: 0 auto;
+  }
+  #logoSite {
+    font-size: 1.28571429rem;
+  }
+  #signInButton {
+    margin-top: 13px;
+  }
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}

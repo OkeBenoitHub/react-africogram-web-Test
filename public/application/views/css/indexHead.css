@@ -1,0 +1,54 @@
+
+/********* HEADER **************/
+/* semi top header */
+#topHead {
+  width: 100%;
+  height: 10px;
+  background-color: #087f23;
+}
+/* logo site */
+#logoSite {
+  background-color: #087f23;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+#logoSite:active {
+  background-color: #81c784;
+}
+/* sign in button */
+#signInButton,#signOutButton {
+  font-weight: bold;
+  color: #4caf50;
+  float: right;
+  background-color: #fff;
+  margin-top: 7px;
+}
+#signInButton:active {
+  background-color: #81c784;
+}
+#signOutButton:active {
+  background-color: #81c784;
+}
+#signInButton span, #signOutButton span {
+  color: #4caf50;
+}
+/* index home header */
+#indexHeader {
+  background-color: #4caf50;
+  width: 100%;
+}
+/* screen size greater than 900 pixels */
+@media only screen and (min-width: 900px) {
+  #logoSite {
+    font-size: 1.28571429rem;
+  }
+  #signInButton, #signOutButton {
+    margin-top: 13px;
+  }
+}
+#androidApp {
+  position:relative;
+  top: -1px;
+  margin-left: 2px;
+}
