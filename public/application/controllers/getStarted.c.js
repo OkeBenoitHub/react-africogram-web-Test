@@ -27,7 +27,7 @@ window.getStartedProcess = function() {
             countryBornCode: window.countryBornCode,
             countryLiveCode: window.countryLiveCode
         }
-        var userData = {
+        var userData = { 
             userId: window.uid,
             firstName: window.firstName,
             lastName: window.lastName,
