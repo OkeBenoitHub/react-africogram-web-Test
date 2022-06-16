@@ -90,7 +90,7 @@ window.setUpHomePageControllerJs = function(isUserLoggedIn) {
                         $(".username").text(window.firstName + " " + window.lastName);
                         $(".countryBornInfo").text("Born in " + window.countriesAllJsonEn[window.countryBornCode]);
                         $(".countryLivesInfo").text("Lives in " + window.countriesAllJsonEn[window.countryLiveCode]);
-                        $("#smallProfilePic").attr("src",window.profilePic);
+                        $("#profilePicSmall").css("background-image","url("+window.profilePic+")");
                         $("body").scroll(function(){
                             var scroll = $("body").scrollTop();
                             if(scroll >= 685 && Modernizr.mq('(min-width: 930px)')) {

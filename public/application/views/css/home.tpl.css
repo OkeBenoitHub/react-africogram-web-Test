@@ -20,10 +20,18 @@ body, html {
   left: 15px;
   height: auto;  
 }
-#smallProfilePic {
-   position:absolute;
-   right:15px;
+#profilePicSmall {
+  display: inline-block;
+  width: 40px;
+  height: 39.2px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg');
 }
+#username {color: grey;}
 @media only screen and (max-width: 1020px) {
     .item span {font-size: 12px;}
     #LeftContainerCard .item img {width: 24px;}
