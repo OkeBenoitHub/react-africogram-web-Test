@@ -127,9 +127,9 @@ function MiddleContainer() {
                       </div>
                   </div>
               </div>
-          </div>
+            </div>
 
-          <div class="w3-container w3-card w3-white w3-round w3-margin" style={{position: "relative",top: "2px"}}><br/>
+            <div class="w3-container w3-card w3-white w3-round w3-margin" style={{position: "relative",top: "2px"}}><br/>
               <img src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style={{width:"60px"}}/>
               <span class="w3-right w3-opacity">1 min</span>
               <h4>John Doe</h4><br/>
@@ -145,19 +145,19 @@ function MiddleContainer() {
               </div>
               <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
               <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-          </div>
+            </div>
 
-          <div class="w3-container w3-card w3-white w3-round w3-margin" style={{position: "relative",top: "2px"}}><br />
+            <div class="w3-container w3-card w3-white w3-round w3-margin" style={{position: "relative",top: "2px"}}><br />
               <img src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style={{width:"60px"}}/>
               <span class="w3-right w3-opacity">16 min</span>
               <h4>Jane Doe</h4><br/>
               <hr class="w3-clear"/>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  ut aliquip ex ea commodo consequat.</p>
               <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
               <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-          </div>
+            </div>
 
-          <div class="w3-container w3-card w3-white w3-round w3-margin" style={{position: "relative",top: "2px"}}><br/>
+            <div class="w3-container w3-card w3-white w3-round w3-margin" style={{position: "relative",top: "2px"}}><br/>
               <img src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style={{width:"60px"}}/>
               <span class="w3-right w3-opacity">32 min</span>
               <h4>Angie Jane</h4><br/>
@@ -167,7 +167,7 @@ function MiddleContainer() {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
               <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-          </div>
+            </div>
           </div>
         </div>
     )
@@ -185,47 +185,43 @@ function RightContainer() {
     return(
      <div class="w3-col m2" id="RightContainer">
           
-          <div class="w3-card w3-round w3-white w3-center">
-              <div class="w3-container">
+        <div class="w3-card w3-round w3-white w3-center">
+            <div class="w3-container">
                   <p>Upcoming Events:</p>
                   <img src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" alt="Forest" style={{width:"100%"}} />
                   <p><strong>Holiday</strong></p>
                   <p>Friday 15:00</p>
                   <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
                   <br/>
-              </div>
-          </div>
+            </div>
+        </div>
 
-          <br/>
+        <br/>
           
-          <div class="w3-card w3-round w3-white w3-center">
-              <div class="w3-container">
-                  <p>Friend Request</p>
-                  <img src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" alt="Avatar" style={{width:"50%"}}/><br/>
-                  <span>Jane Doe</span>
-                  <div class="w3-row w3-opacity">
-                      <div class="w3-half">
-                          <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-                      </div>
-                      <div class="w3-half">
-                          <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <div class="w3-card w3-round w3-white w3-center">
+            <div class="w3-container">
+                <p>Friend Request</p>
+                <img src="https://res.cloudinary.com/africogram/image/upload/v1620170805/images/profile_pic_default_u046d1.jpg" alt="Avatar" style={{width:"50%"}}/><br/>
+                <span>Jane Doe</span>
+                <div class="w3-row w3-opacity">
+                    <div class="w3-half">
+                        <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+                    </div>
+                    <div class="w3-half">
+                        <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          <br/>
-
-          <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <br/>
+        <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
               <p>ADS</p>
-          </div>
-
-          <br />
-      
-          <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        </div>
+        <br />
+        <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
               <p><i class="fa fa-bug w3-xxlarge"></i></p>
-          </div>
-
+        </div>
      </div>
    )
 }
