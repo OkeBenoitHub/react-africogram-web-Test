@@ -69,7 +69,7 @@ function LeftContainer() {
                 </a>
                 <a class="item" id="groups">
                     <img src="https://res.cloudinary.com/africogram/image/upload/v1624638942/images/group_64_rq3h6j.png" />
-                    <span class="menuText">Groups</span>
+                    <span class="menuText">Groupers</span>
                     <div class="ui label">51</div>
                 </a>
                 <a class="item" id="messages">
