@@ -1,10 +1,10 @@
 /* Sign user out */
 window.signUserOut = function signUserOut() {
     window.auth.signOut().then(() => {
-         /* Sign-out successful. */
-         $("body").addClass("signOut");
+        /* Sign-out successful. */
+        $("body").addClass("signOut");
       }).catch(function(error) {
-         /* An error happened. */
+        /* An error happened. */
     });
 }
  
@@ -12,52 +12,52 @@ window.signUserOut = function signUserOut() {
 window.checkForUserAuth = function() {
     window.auth.onAuthStateChanged((user) => {
         if (user) {
-             // user is logged in
-             if($("body").hasClass("notLoggedIn")) {
-                 location.reload();
-                 return false;
-             }
-             $("body").addClass("loggedIn");
-             window.email = user.email;
-             window.uid = user.uid;
-             window.firstName = Cookies.get('firstName');
-             window.lastName = Cookies.get('lastName');
-             window.birthMonth = Cookies.get('birthMonth');
-             window.birthDay = Cookies.get('birthDay');
-             window.birthYear = Cookies.get('birthYear');
-             window.gender = Cookies.get('gender');
+            // user is logged in
+            if($("body").hasClass("notLoggedIn")) {
+                showDialogBox("notLoggedInModal",false,true,true);
+                return false;
+            }
+            $("body").addClass("loggedIn");
+            window.email = user.email;
+            window.uid = user.uid;
+            window.firstName = Cookies.get('firstName');
+            window.lastName = Cookies.get('lastName');
+            window.birthMonth = Cookies.get('birthMonth');
+            window.birthDay = Cookies.get('birthDay');
+            window.birthYear = Cookies.get('birthYear');
+            window.gender = Cookies.get('gender');
             getUserDataById(window.uid).then((doc) => {
                 if (doc.exists) {
-                     var data = doc.data();
-                     window.firstName = data.firstName;
-                     window.lastName = data.lastName;
-                     window.email = data.email;
-                     window.isNewUser = data.isNewUser;
-                     window.birthMonth = data.birthMonth;
-                     window.birthDay = data.birthDay;
-                     window.birthYear = data.birthYear;
-                     window.gender = data.gender;
-                     window.lastOnlineDate = data.lastOnlineDate;
-                     window.lastOnlineTime = data.lastOnlineTime;
-                     window.profilePic = data.profilePic;
-                     window.countryBornCode = data.countryBornCode;
-                     window.countryLiveCode = data.countryLiveCode;
+                    var data = doc.data();
+                    window.firstName = data.firstName;
+                    window.lastName = data.lastName;
+                    window.email = data.email;
+                    window.isNewUser = data.isNewUser;
+                    window.birthMonth = data.birthMonth;
+                    window.birthDay = data.birthDay;
+                    window.birthYear = data.birthYear;
+                    window.gender = data.gender;
+                    window.lastOnlineDate = data.lastOnlineDate;
+                    window.lastOnlineTime = data.lastOnlineTime;
+                    window.profilePic = data.profilePic;
+                    window.countryBornCode = data.countryBornCode;
+                    window.countryLiveCode = data.countryLiveCode;
                 }
                 setUpPageControllerJs(true);
                 $("#" + window.tempId + " .loggedIn").removeAttr("style");
             });
         } else {
-             // not logged in
-             if($("body").hasClass("signOut") || $("body").hasClass("loggedIn")) {
-                 location.reload();
-                 return false;
-             }
-             $("body").addClass("notLoggedIn");
-             setUpPageControllerJs(false);
-             $("#" + window.tempId + " .notLoggedIn").removeAttr("style");
+            // not logged in
+            if($("body").hasClass("signOut") || $("body").hasClass("loggedIn")) {
+                location.reload();
+                return false;
+            }
+            $("body").addClass("notLoggedIn");
+            setUpPageControllerJs(false);
+            $("#" + window.tempId + " .notLoggedIn").removeAttr("style");
         }
-     });
- }
+    });
+}
  
  /* Update user password */
 window.updateUserPassword = function(newPassword) {
