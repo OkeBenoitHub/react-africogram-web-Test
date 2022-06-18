@@ -43,7 +43,7 @@ function LeftContainer() {
                 </div>
                 <div class="extra content">
                     <div class="ui two buttons">
-                        <div class="ui basic grey button">Profil</div>
+                        <div class="ui basic grey button">Profile</div>
                         <div class="ui basic grey button">Friends (20)</div>
                     </div>
                 </div>
