@@ -40,7 +40,7 @@ export default function SignInModalBox() {
         <div class="actions">
           <div class="ui basic circular button cancelSignInAgain">Cancel</div>
           <div class="ui button circular green" id="signedInAgain">
-            Sign In
+               Sign In
           </div>
         </div>
       </div>

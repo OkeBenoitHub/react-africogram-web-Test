@@ -108,7 +108,14 @@ window.setUpHomePageControllerJs = function(isUserLoggedIn) {
                         reportIssueProcess();
                     }
                     $(".signOut").click(function(){
+                        $("body").addClass("signOut");
                         signUserOut();
+                    });
+                    $(".cancelSignInAgain").click(function() {
+                        location.reload();
+                    });
+                    $("#signedInAgain").click(function() {
+                        showDialogBox("signInModal",true,false,false);
                     });
                 } else {
                     $("#signInButton,#androidApp").removeAttr("style");

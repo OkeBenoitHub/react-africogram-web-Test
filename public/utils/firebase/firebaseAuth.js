@@ -2,7 +2,6 @@
 window.signUserOut = function signUserOut() {
     window.auth.signOut().then(() => {
         /* Sign-out successful. */
-        $("body").addClass("signOut");
       }).catch(function(error) {
         /* An error happened. */
     });
@@ -14,7 +13,7 @@ window.checkForUserAuth = function() {
         if (user) {
             // user is logged in
             if($("body").hasClass("notLoggedIn")) {
-                showDialogBox("notLoggedInModal",false,true,true);
+                location.reload();
                 return false;
             }
             $("body").addClass("loggedIn");
@@ -49,7 +48,11 @@ window.checkForUserAuth = function() {
         } else {
             // not logged in
             if($("body").hasClass("signOut") || $("body").hasClass("loggedIn")) {
-                location.reload();
+                if($("body").hasClass("signOut") && $("body").hasClass("loggedIn")){
+                    location.reload();
+                } else {
+                    showDialogBox("notLoggedInModal",false,true,true);
+                }
                 return false;
             }
             $("body").addClass("notLoggedIn");
