@@ -116,6 +116,7 @@ window.setUpHomePageControllerJs = function(isUserLoggedIn) {
                     });
                     $("#signedInAgain").click(function() {
                         showDialogBox("signInModal",true,false,false);
+                        signInProcess();
                     });
                 } else {
                     $("#signInButton,#androidApp").removeAttr("style");

@@ -51,7 +51,7 @@ window.checkForUserAuth = function() {
                 if($("body").hasClass("signOut") && $("body").hasClass("loggedIn")){
                     location.reload();
                 } else {
-                    showDialogBox("notLoggedInModal",false,true,true);
+                    showDialogBox("notLoggedInModal",false,true,false);
                 }
                 return false;
             }
