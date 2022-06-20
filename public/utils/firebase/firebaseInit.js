@@ -1,6 +1,6 @@
 /* Init Firebase */
 window.firebaseInitConfig = function () {
-  const firebaseTestConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyCTWURfCR46jFCjJTXPVw0izAhUVOChUZc",
     authDomain: "africogramdev.firebaseapp.com",
     projectId: "africogramdev",
@@ -9,21 +9,9 @@ window.firebaseInitConfig = function () {
     appId: "1:64271862697:web:ae6657c145aaebf81212b8",
     measurementId: "G-929TBEPDNL"
   };
-
-  const firebaseLiveConfig = {
-    apiKey: "AIzaSyCGFSj0VGwNznYixYTb48iKqJXE0plJ5SE",
-    authDomain: "africogram-live-e0477.firebaseapp.com",
-    projectId: "africogram-live-e0477",
-    storageBucket: "africogram-live-e0477.appspot.com",
-    messagingSenderId: "548866228905",
-    appId: "1:548866228905:web:555c30aaf220864ff9dfb8",
-    measurementId: "G-S5TCT5S18N"
-  };
   
   // Initialize Firebase Test
-  firebase.initializeApp(firebaseTestConfig);
-  // Initialize Firebase Live
-  //firebase.initializeApp(firebaseLiveConfig);
+  firebase.initializeApp(firebaseConfig);
   // Initialize Analytics and get a reference to the service
   firebase.analytics();
   // Initialize Firebase Authentication and get a reference to the service
