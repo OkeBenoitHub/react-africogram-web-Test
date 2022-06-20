@@ -1,5 +1,5 @@
 /* Init Firebase Test */
-window.firebaseTestInitConfig = function () {
+window.firebaseInitConfig = function () {
   const firebaseConfig = {
     apiKey: "AIzaSyCTWURfCR46jFCjJTXPVw0izAhUVOChUZc",
     authDomain: "africogramdev.firebaseapp.com",
