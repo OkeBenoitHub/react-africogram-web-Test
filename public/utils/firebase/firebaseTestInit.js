@@ -1,7 +1,5 @@
-/* Init Firebase */
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-window.firebaseInitConfig = function () {
+/* Init Firebase Test */
+window.firebaseTestInitConfig = function () {
   const firebaseConfig = {
     apiKey: "AIzaSyCTWURfCR46jFCjJTXPVw0izAhUVOChUZc",
     authDomain: "africogramdev.firebaseapp.com",
