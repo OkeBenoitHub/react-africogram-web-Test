@@ -20,8 +20,10 @@ window.firebaseInitConfig = function () {
     measurementId: "G-S5TCT5S18N"
   };
   
-  // Initialize Firebase
+  // Initialize Firebase Test
   firebase.initializeApp(firebaseTestConfig);
+  // Initialize Firebase Live
+  //firebase.initializeApp(firebaseLiveConfig);
   // Initialize Analytics and get a reference to the service
   firebase.analytics();
   // Initialize Firebase Authentication and get a reference to the service
