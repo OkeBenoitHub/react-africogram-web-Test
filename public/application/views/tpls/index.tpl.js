@@ -25,7 +25,7 @@ function AppHeadline1() {
           <td style={{ padding: "10px" }}>
             <div class="content">
               <span className="subheadline">
-                Connect with africans nearby and around the world!
+                Connect with africans nearby and the diaspora around the world!
               </span>
             </div>
           </td>
