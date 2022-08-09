@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/indexFoot.css";
+import ".../css/indexFoot.css";
 
 export default function FooterBox() {
   return (

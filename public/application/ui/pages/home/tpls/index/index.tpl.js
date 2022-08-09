@@ -1,6 +1,6 @@
 import React from "react";
-import SignUpBox from "./signup.tpl.js";
-import "../css/index.tpl.css";
+import SignUpBox from "ui/pagelets/signup/signup.tpl.js";
+import "css/index.tpl.css";
 import FooterBox from "./indexFoot.tpl.js";
 
 export default function IndexTemplate() {

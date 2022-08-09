@@ -1,7 +1,7 @@
 import React from "react";
-import FeedbackModal from "../tpls/modals/feedback.tpl.js";
-import ReportIssueModal from "../tpls/modals/reportIssue.tpl.js";
-import "../css/homeHead.css";
+import FeedbackModal from "ui/pagelets/feedback/feedback.tpl.js";
+import ReportIssueModal from "ui/pagelets/reports/reportIssue.tpl.js";
+import "css/homeHead.css";
 
 export default function HomeHead() {
   return(

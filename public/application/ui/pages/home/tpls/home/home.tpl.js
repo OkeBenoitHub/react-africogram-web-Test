@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/home.tpl.css";
+import "css/home.tpl.css";
 
 export default function HomeTemplate() {
   return (
