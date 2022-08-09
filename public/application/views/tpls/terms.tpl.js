@@ -1,20 +1,20 @@
-import React from "react";
-import FooterBox from "./indexFoot.tpl.js"
+import React from 'react';
+import FooterBox from './indexFoot.tpl.js';
 
 export default function TermsTemplate() {
   return (
     <div>
-        <TermsMain />
+      <TermsMain />
     </div>
   );
 }
 
 function TermsMain() {
   const mainContentStyle = {
-      backgroundColor: "#fff",
-      width: "100%",
-      height: "auto",
-      marginTop: "15px"
+    backgroundColor: '#fff',
+    width: '100%',
+    height: 'auto',
+    marginTop: '15px',
   };
   return (
     <div class="termsP">
@@ -23,7 +23,7 @@ function TermsMain() {
           <div class="w3-row">
             <div class="w3-container">
               <div id="termsContent" style={mainContentStyle}>
-                <div class="ui basic segment" style={{marginBottom: "15px"}}>
+                <div class="ui basic segment" style={{ marginBottom: '15px' }}>
                   <TermsOfServiceText />
                 </div>
               </div>
@@ -40,113 +40,315 @@ function TermsOfServiceText() {
   return (
     <div>
       <center>
-        <h2 style={{color:"#4caf50"}}>Terms of Service</h2>
+      <h2 style={{ color: '#4caf50' }}>Terms of Service</h2>
       </center>
-      <div style={{margin:"30px", color:"grey"}} id="termsTpl">
-        <h3>1. Terms</h3>
+      <div style={{ margin: '30px', color: 'grey' }} id="termsTpl">
+
         <p>
-          By accessing the website at{" "}
-          <a href="https://www.africogram.com">https://www.africogram.com</a>, you
-          are agreeing to be bound by these terms of service, all applicable
-          laws and regulations, and agree that you are responsible for
-          compliance with any applicable local laws. If you do not agree with
-          any of these terms, you are prohibited from using or accessing this
-          site. The materials contained in this website are protected by
-          applicable copyright and trademark law.
+          These terms and conditions outline the rules and regulations for the
+          use of Africogram Inc's Website, located at
+          https://www.africogram.com.
         </p>
-        <h3>2. Use License</h3>
-        <ol type="a">
+
+        <p>
+          By accessing this website we assume you accept these terms and
+          conditions. Do not continue to use Africogram if you do not agree to
+          take all of the terms and conditions stated on this page.
+        </p>
+
+        <p>
+          The following terminology applies to these Terms and Conditions,
+          Privacy Statement and Disclaimer Notice and all Agreements: "Client",
+          "You" and "Your" refers to you, the person log on this website and
+          compliant to the Company’s terms and conditions. "The Company",
+          "Ourselves", "We", "Our" and "Us", refers to our Company. "Party",
+          "Parties", or "Us", refers to both the Client and ourselves. All terms
+          refer to the offer, acceptance and consideration of payment necessary
+          to undertake the process of our assistance to the Client in the most
+          appropriate manner for the express purpose of meeting the Client’s
+          needs in respect of provision of the Company’s stated services, in
+          accordance with and subject to, prevailing law of Netherlands. Any use
+          of the above terminology or other words in the singular, plural,
+          capitalization and/or he/she or they, are taken as interchangeable and
+          therefore as referring to same.
+        </p>
+
+        <h3>
+          <strong>Cookies</strong>
+        </h3>
+
+        <p>
+          We employ the use of cookies. By accessing Africogram, you agreed to
+          use cookies in agreement with the Africogram Inc's Privacy Policy.{' '}
+        </p>
+
+        <p>
+          Most interactive websites use cookies to let us retrieve the user’s
+          details for each visit. Cookies are used by our website to enable the
+          functionality of certain areas to make it easier for people visiting
+          our website. Some of our affiliate/advertising partners may also use
+          cookies.
+        </p>
+
+        <h3>
+          <strong>License</strong>
+        </h3>
+
+        <p>
+          Unless otherwise stated, Africogram Inc and/or its licensors own the
+          intellectual property rights for all material on Africogram. All
+          intellectual property rights are reserved. You may access this from
+          Africogram for your own personal use subjected to restrictions set in
+          these terms and conditions.
+        </p>
+
+        <p>You must not:</p>
+        <ul>
+          <li>Republish material from Africogram</li>
+          <li>Sell, rent or sub-license material from Africogram</li>
+          <li>Reproduce, duplicate or copy material from Africogram</li>
+          <li>Redistribute content from Africogram</li>
+        </ul>
+
+        <p>
+          Parts of this website offer an opportunity for users to post and
+          exchange opinions and information in certain areas of the website.
+          Africogram Inc does not filter, edit, publish or review Comments prior
+          to their presence on the website. Comments do not reflect the views
+          and opinions of Africogram Inc,its agents and/or affiliates. Comments
+          reflect the views and opinions of the person who post their views and
+          opinions. To the extent permitted by applicable laws, Africogram Inc
+          shall not be liable for the Comments or for any liability, damages or
+          expenses caused and/or suffered as a result of any use of and/or
+          posting of and/or appearance of the Comments on this website.
+        </p>
+
+        <p>
+          Africogram Inc reserves the right to monitor all Comments and to
+          remove any Comments which can be considered inappropriate, offensive
+          or causes breach of these Terms and Conditions.
+        </p>
+
+        <p>You warrant and represent that:</p>
+
+        <ul>
           <li>
-            Permission is granted to temporarily download one copy of the
-            materials (information or software) on Africogram's website for
-            personal, non-commercial transitory viewing only. This is the grant
-            of a license, not a transfer of title, and under this license you
-            may not:
-            <ol type="1">
-              <li>modify or copy the materials;</li>
-              <li>
-                use the materials for any commercial purpose, or for any public
-                display (commercial or non-commercial);
-              </li>
-              <li>
-                attempt to decompile or reverse engineer any software contained
-                on Africogram's website;
-              </li>
-              <li>
-                remove any copyright or other proprietary notations from the
-                materials; or
-              </li>
-              <li>
-                transfer the materials to another person or "mirror" the
-                materials on any other server.
-              </li>
-            </ol>
+            You are entitled to post the Comments on our website and have all
+            necessary licenses and consents to do so;
           </li>
           <li>
-            This license shall automatically terminate if you violate any of
-            these restrictions and may be terminated by Africogram at any time.
-            Upon terminating your viewing of these materials or upon the
-            termination of this license, you must destroy any downloaded
-            materials in your possession whether in electronic or printed
-            format.
-          </li>
-        </ol>
-        <h3>3. Disclaimer</h3>
-        <ol type="1">
-          <li>
-            The materials on Africogram's website are provided on an 'as is'
-            basis. Africogram makes no warranties, expressed or implied, and
-            hereby disclaims and negates all other warranties including, without
-            limitation, implied warranties or conditions of merchantability,
-            fitness for a particular purpose, or non-infringement of
-            intellectual property or other violation of rights.
+            The Comments do not invade any intellectual property right,
+            including without limitation copyright, patent or trademark of any
+            third party;
           </li>
           <li>
-            Further, Africogram does not warrant or make any representations
-            concerning the accuracy, likely results, or reliability of the use
-            of the materials on its website or otherwise relating to such
-            materials or on any sites linked to this site.
+            The Comments do not contain any defamatory, libelous, offensive,
+            indecent or otherwise unlawful material which is an invasion of
+            privacy
           </li>
-        </ol>
-        <h3>4. Limitations</h3>
+          <li>
+            The Comments will not be used to solicit or promote business or
+            custom or present commercial activities or unlawful activity.
+          </li>
+        </ul>
+
         <p>
-          In no event shall Africogram or its suppliers be liable for any
-          damages (including, without limitation, damages for loss of data or
-          profit, or due to business interruption) arising out of the use or
-          inability to use the materials on Africogram's website, even if
-          Africogram or a Africogram authorized representative has been notified
-          orally or in writing of the possibility of such damage. Because some
-          jurisdictions do not allow limitations on implied warranties, or
-          limitations of liability for consequential or incidental damages,
-          these limitations may not apply to you.
+          You hereby grant Africogram Inc a non-exclusive license to use,
+          reproduce, edit and authorize others to use, reproduce and edit any of
+          your Comments in any and all forms, formats or media.
         </p>
-        <h3>5. Accuracy of materials</h3>
+
+        <h3>
+          <strong>Hyperlinking to our Content</strong>
+        </h3>
+
         <p>
-          The materials appearing on Africogram's website could include
-          technical, typographical, or photographic errors. Africogram does not
-          warrant that any of the materials on its website are accurate,
-          complete or current. Africogram may make changes to the materials
-          contained on its website at any time without notice. However
-          Africogram does not make any commitment to update the materials.
+          The following organizations may link to our Website without prior
+          written approval:
         </p>
-        <h3>6. Links</h3>
+
+        <ul>
+          <li>Government agencies;</li>
+          <li>Search engines;</li>
+          <li>News organizations;</li>
+          <li>
+            Online directory distributors may link to our Website in the same
+            manner as they hyperlink to the Websites of other listed businesses;
+            and
+          </li>
+          <li>
+            System wide Accredited Businesses except soliciting non-profit
+            organizations, charity shopping malls, and charity fundraising
+            groups which may not hyperlink to our Web site.
+          </li>
+        </ul>
+
         <p>
-          Africogram has not reviewed all of the sites linked to its website and
-          is not responsible for the contents of any such linked site. The
-          inclusion of any link does not imply endorsement by Africogram of the
-          site. Use of any such linked website is at the user's own risk.
+          These organizations may link to our home page, to publications or to
+          other Website information so long as the link: (a) is not in any way
+          deceptive; (b) does not falsely imply sponsorship, endorsement or
+          approval of the linking party and its products and/or services; and
+          (c) fits within the context of the linking party’s site.
         </p>
-        <h3>7. Modifications</h3>
+
         <p>
-          Africogram may revise these terms of service for its website at any
-          time without notice. By using this website you are agreeing to be
-          bound by the then current version of these terms of service.
+          We may consider and approve other link requests from the following
+          types of organizations:
         </p>
-        <h3>8. Governing Law</h3>
+
+        <ul>
+          <li>commonly-known consumer and/or business information sources;</li>
+          <li>dot.com community sites;</li>
+          <li>associations or other groups representing charities;</li>
+          <li>online directory distributors;</li>
+          <li>internet portals;</li>
+          <li>accounting, law and consulting firms; and</li>
+          <li>educational institutions and trade associations.</li>
+        </ul>
+
         <p>
-          These terms and conditions are governed by and construed in accordance
-          with the laws of Maryland and you irrevocably submit to the exclusive
-          jurisdiction of the courts in that State or location.
+          We will approve link requests from these organizations if we decide
+          that: (a) the link would not make us look unfavorably to ourselves or
+          to our accredited businesses; (b) the organization does not have any
+          negative records with us; (c) the benefit to us from the visibility of
+          the hyperlink compensates the absence of Africogram Inc; and (d) the
+          link is in the context of general resource information.
+        </p>
+
+        <p>
+          These organizations may link to our home page so long as the link: (a)
+          is not in any way deceptive; (b) does not falsely imply sponsorship,
+          endorsement or approval of the linking party and its products or
+          services; and (c) fits within the context of the linking party’s site.
+        </p>
+
+        <p>
+          If you are one of the organizations listed in paragraph 2 above and
+          are interested in linking to our website, you must inform us by
+          sending an e-mail to Africogram Inc. Please include your name, your
+          organization name, contact information as well as the URL of your
+          site, a list of any URLs from which you intend to link to our Website,
+          and a list of the URLs on our site to which you would like to link.
+          Wait 2-3 weeks for a response.
+        </p>
+
+        <p>Approved organizations may hyperlink to our Website as follows:</p>
+
+        <ul>
+          <li>By use of our corporate name; or</li>
+          <li>By use of the uniform resource locator being linked to; or</li>
+          <li>
+            By use of any other description of our Website being linked to that
+            makes sense within the context and format of content on the linking
+            party’s site.
+          </li>
+        </ul>
+
+        <p>
+          No use of Africogram Inc's logo or other artwork will be allowed for
+          linking absent a trademark license agreement.
+        </p>
+
+        <h3>
+          <strong>iFrames</strong>
+        </h3>
+
+        <p>
+          Without prior approval and written permission, you may not create
+          frames around our Webpages that alter in any way the visual
+          presentation or appearance of our Website.
+        </p>
+
+        <h3>
+          <strong>Content Liability</strong>
+        </h3>
+
+        <p>
+          We shall not be hold responsible for any content that appears on your
+          Website. You agree to protect and defend us against all claims that is
+          rising on your Website. No link(s) should appear on any Website that
+          may be interpreted as libelous, obscene or criminal, or which
+          infringes, otherwise violates, or advocates the infringement or other
+          violation of, any third party rights.
+        </p>
+
+        <h3>
+          <strong>Your Privacy</strong>
+        </h3>
+
+        <p>Please read Privacy Policy</p>
+
+        <h3>
+          <strong>Reservation of Rights</strong>
+        </h3>
+
+        <p>
+          We reserve the right to request that you remove all links or any
+          particular link to our Website. You approve to immediately remove all
+          links to our Website upon request. We also reserve the right to amen
+          these terms and conditions and it’s linking policy at any time. By
+          continuously linking to our Website, you agree to be bound to and
+          follow these linking terms and conditions.
+        </p>
+
+        <h3>
+          <strong>Removal of links from our website</strong>
+        </h3>
+
+        <p>
+          If you find any link on our Website that is offensive for any reason,
+          you are free to contact and inform us any moment. We will consider
+          requests to remove links but we are not obligated to or so or to
+          respond to you directly.
+        </p>
+
+        <p>
+          We do not ensure that the information on this website is correct, we
+          do not warrant its completeness or accuracy; nor do we promise to
+          ensure that the website remains available or that the material on the
+          website is kept up to date.
+        </p>
+
+        <h3>
+          <strong>Disclaimer</strong>
+        </h3>
+
+        <p>
+          To the maximum extent permitted by applicable law, we exclude all
+          representations, warranties and conditions relating to our website and
+          the use of this website. Nothing in this disclaimer will:
+        </p>
+
+        <ul>
+          <li>
+            limit or exclude our or your liability for death or personal injury;
+          </li>
+          <li>
+            limit or exclude our or your liability for fraud or fraudulent
+            misrepresentation;
+          </li>
+          <li>
+            limit any of our or your liabilities in any way that is not
+            permitted under applicable law; or
+          </li>
+          <li>
+            exclude any of our or your liabilities that may not be excluded
+            under applicable law.
+          </li>
+        </ul>
+
+        <p>
+          The limitations and prohibitions of liability set in this Section and
+          elsewhere in this disclaimer: (a) are subject to the preceding
+          paragraph; and (b) govern all liabilities arising under the
+          disclaimer, including liabilities arising in contract, in tort and for
+          breach of statutory duty.
+        </p>
+
+        <p>
+          As long as the website and the information and services on the website
+          are provided free of charge, we will not be liable for any loss or
+          damage of any nature.
         </p>
       </div>
     </div>
