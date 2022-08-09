@@ -1,10 +1,10 @@
-import "../public/utils/MainUtil.js"; // Main Util
-import "../public/utils/UrlProcessingUtil.js"; // Url Proceessing Util
-import "../public/utils/EmailUtil.js"; // Email Util
-import "../public/utils/firebase/firebaseInit.js"; // firebase init config
-import "../public/utils/firebase/firestoreDb.js" // firestore DB util
-import "../public/utils/firebase/firebaseStorage.js" // firebase Storage util
-import "../public/utils/firebase/firebaseAuth.js"; // firebase auth util
+import "../public/utils/MainUtil.js"; // main util
+import "../public/utils/UrlProcessingUtil.js"; // url proceessing util
+import "../public/utils/EmailUtil.js"; // email util
+import "../public/utils/firebase/FirebaseInitUtil.js"; // firebase init config
+import "../public/utils/firebase/FirestoreDbUtil.js" // firestore DB util
+import "../public/utils/firebase/FirebaseStorageUtil.js" // firebase Storage util
+import "../public/utils/firebase/FirebaseAuthUtil.js"; // firebase auth util
 import "../public/application/models/userData.js"; // user data
 import "./app.css";
 /**
