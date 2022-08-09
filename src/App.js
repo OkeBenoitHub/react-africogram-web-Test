@@ -1,6 +1,6 @@
-import "../public/utils/globals.js"; // globals
-import "../public/utils/urlProcessing.js"; // url proceessing
-import "../public/utils/emailTpl.js"; // email
+import "../public/utils/MainUtil.js"; // Main Util
+import "../public/utils/UrlProcessingUtil.js"; // Url Proceessing Util
+import "../public/utils/EmailUtil.js"; // Email Util
 import "../public/utils/firebase/firebaseInit.js"; // firebase init config
 import "../public/utils/firebase/firestoreDb.js" // firestore DB util
 import "../public/utils/firebase/firebaseStorage.js" // firebase Storage util
