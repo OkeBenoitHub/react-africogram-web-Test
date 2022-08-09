@@ -1,6 +1,6 @@
 import React from "react";
 import IndexHead from "../views/tpls/indexHead.tpl.js";
-import _404Template from "../views/tpls/404.tpl.js";
+import _404Template from "404.tpl.js";
 import SignInModalBox from "../views/tpls/modals/signIn.tpl.js";
 
 export default function _404Page() {

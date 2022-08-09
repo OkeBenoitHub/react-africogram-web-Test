@@ -1,11 +1,11 @@
 import React from "react";
-import IndexHead from "../views/tpls/indexHead.tpl.js";
-import IndexTemplate from "../views/tpls/index.tpl.js";
-import HomeHead from "../views/tpls/homeHead.tpl.js";
-import HomeTemplate from "../views/tpls/home.tpl.js";
-import GetStartedTemplate from "../views/tpls/getStarted.tpl.js";
-import SignInModalBox from "../views/tpls/modals/signIn.tpl.js";
-import VerifyAccountModalBox from "../views/tpls/modals/verifyAccount.tpl.js";
+import IndexHead from "tpls/index/indexHead.tpl.js";
+import IndexTemplate from "tpls/index/index.tpl.js";
+import HomeHead from "tpls/home/homeHead.tpl.js";
+import HomeTemplate from "tpls/home/home.tpl.js";
+import GetStartedTemplate from ".../pagelets/getstarted/getStarted.tpl.js";
+import SignInModalBox from ".../pagelets/signin/signIn.tpl.js";
+import VerifyAccountModalBox from ".../pagelets/verifyaccount/verifyAccount.tpl.js";
 
 export default function HomePage() {
   if(window.controller == "home.c.js") {

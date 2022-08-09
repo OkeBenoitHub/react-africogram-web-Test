@@ -169,7 +169,8 @@ window.signUpProcess = function signUpProcess() {
       }
       /* try to sign up new user */
       $("#signUpBox").addClass("loading");
-      signUpNewUserForAfricogram(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender);
-      sendWelcomeEmail(email,firstName);
-});
+      //signUpNewUserForAfricogram(email,password,firstName,lastName,birthMonth,birthDay,birthYear,gender);
+      //sendWelcomeEmail(email,firstName);
+      sendVerificationCode(email);
+    });
 };

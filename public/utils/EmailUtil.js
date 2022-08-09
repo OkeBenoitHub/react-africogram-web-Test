@@ -1,5 +1,5 @@
 /**
- * Email Template Util
+ * Email Util
  */
 
 window.emailTplJs = function(headLineTitle, htmlTemp) {
