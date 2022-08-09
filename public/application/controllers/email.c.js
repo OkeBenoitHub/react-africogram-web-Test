@@ -2,7 +2,7 @@
 window.sendWelcomeEmail = function(email,firstName) {
   var toEmailsArray = [email];
   var headLineTitle = "Hi" + " " + firstName;
-  var htmlTemp = "Africogram helps you connect with africans nearby and around the world!<br/>" + "Feel free to invite your friends to join to make it a bigger place.";
+  var htmlTemp = "Africogram helps you connect with africans nearby and the diaspora around the world!<br/>" + "Feel free to invite your friends to join to make it a bigger place.";
   var subject = "Get started";
   sendHtmlEmail(toEmailsArray,headLineTitle,htmlTemp,subject);
 }
