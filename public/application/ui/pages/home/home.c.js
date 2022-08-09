@@ -3,7 +3,7 @@ import IndexHead from "tpls/index/indexHead.tpl.js";
 import IndexTemplate from "tpls/index/index.tpl.js";
 import HomeHead from "tpls/home/homeHead.tpl.js";
 import HomeTemplate from "tpls/home/home.tpl.js";
-import GetStartedTemplate from ".../pagelets/getstarted/getStarted.tpl.js";
+import GetStartedTemplate from "/ui/pagelets/getstarted/getStarted.tpl.js";
 import SignInModalBox from ".../pagelets/signin/signIn.tpl.js";
 import VerifyAccountModalBox from ".../pagelets/verifyaccount/verifyAccount.tpl.js";
 
