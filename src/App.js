@@ -10,10 +10,34 @@ import '../public/utils/firebase/FirebaseAuthUtil.js'; // firebase auth util
 import '../public/application/models/userData.js'; // user data
 import './app.css';
 
-import HomePage from "./HomePage.js"
-import TermsPage from "./TermsPage.js"
-import PrivacyPage from "./PrivacyPage.js"
-import _404Page from "./404Page.js"
+/**
+ * import ui page controllers
+ *
+ import '../public/application/ui/pages/home/home.c.js';
+ import '../public/application/ui/pages/terms/terms.c.js';
+ import '../public/application/ui/pages/privacy/privacy.c.js';
+ import '../public/application/ui/pages/404/404.c.js';
+
+ import '../public/application/ui/pagelets/feedback/feedback.c.js';
+ import '../public/application/ui/pagelets/reports/reportIssue.c.js';
+ import '../public/application/ui/pagelets/verifyaccount/verifyAccount.c.js';
+ import '../public/application/ui/pagelets/getstarted/getStarted.c.js';
+ import '../public/application/ui/pagelets/signup/signUp.c.js';
+ import '../public/application/ui/pagelets/signin/signIn.c.js';
+
+import '../public/application/ui/pages/home/css/indexHead.css';
+import '../public/application/ui/pages/home/css/index.tpl.css';
+import '../public/application/ui/pages/home/css/homeHead.css';
+import '../public/application/ui/pages/home/css/home.tpl.css';
+
+import TermsMain from '../public/application/ui/pages/terms/terms.tpl.js';
+import PrivacyMain from '../public/application/ui/pages/privacy/privacy.tpl.js';
+import _404Main from '../public/application/ui/pages/404/404.tpl.js'; */
+
+import HomePage from "./pages/home/HomePage.p.js"
+import TermsPage from "./pages/terms/TermsPage.p.js"
+import PrivacyPage from "./pages/privacy/PrivacyPage.p.js"
+import _404Page from "./pages/404/404Page.p.js"
 
 window.setUpPageControllerJs = function (isUserLoggedIn) {
   if (window.controller == 'home.c.js') {

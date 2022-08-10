@@ -1,5 +1,5 @@
 import React from "react";
-function GetStartedMain() {
+export default function GetStartedMain() {
     const mainContentStyle = {
         backgroundColor: "#fff",
         width: "100%",
