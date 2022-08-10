@@ -1,4 +1,42 @@
 import React from "react";
+export default function IndexMain() {
+  return (
+    <div class="indexP">
+      <div>
+        <div class="responsiveBox">
+          <div class="w3-row">
+            <div class="w3-half w3-container">
+              <div id="leftBox">
+                <div style={{ width: "100%", background: "#fff" }}>
+                  <center>
+                    <img
+                      class="africaMap"
+                      src="https://res.cloudinary.com/africogram/image/upload/v1616996671/images/africa_map_cvysp3.jpg"
+                    />
+                  </center>
+                </div>
+                <AppHeadline1 />
+                <AppHeadline2 />
+                <AppHeadline3 />
+              </div>
+            </div>
+            <div class="w3-half w3-container">
+              <SignUpBox />
+              <footer class="w3-container w3-center w3-opacity" style={{marginTop: "20px",marginBottom: "20px"}}>
+                <div class="w3-large">
+                  <i class="fa fa-facebook-official w3-hover-opacity" />&nbsp;
+                  <i class="fa fa-twitter w3-hover-opacity" />&nbsp;
+                  <i class="fa fa-linkedin w3-hover-opacity" /><br/>
+                  <small>Africogram&copy;{window.currentYear}</small>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 function AppHeadline1() {
   return (
     <h4 class="ui header block headline" style={{ marginTop: "13px" }}>
@@ -68,45 +106,6 @@ function AppHeadline3() {
         </tr>
       </table>
     </h4>
-  );
-}
-
-export default function IndexMain() {
-  return (
-    <div class="indexP">
-      <div>
-        <div class="responsiveBox">
-          <div class="w3-row">
-            <div class="w3-half w3-container">
-              <div id="leftBox">
-                <div style={{ width: "100%", background: "#fff" }}>
-                  <center>
-                    <img
-                      class="africaMap"
-                      src="https://res.cloudinary.com/africogram/image/upload/v1616996671/images/africa_map_cvysp3.jpg"
-                    />
-                  </center>
-                </div>
-                <AppHeadline1 />
-                <AppHeadline2 />
-                <AppHeadline3 />
-              </div>
-            </div>
-            <div class="w3-half w3-container">
-              <SignUpBox />
-              <footer class="w3-container w3-center w3-opacity" style={{marginTop: "20px",marginBottom: "20px"}}>
-                <div class="w3-large">
-                  <i class="fa fa-facebook-official w3-hover-opacity" />&nbsp;
-                  <i class="fa fa-twitter w3-hover-opacity" />&nbsp;
-                  <i class="fa fa-linkedin w3-hover-opacity" /><br/>
-                  <small>Africogram&copy;{window.currentYear}</small>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
 
