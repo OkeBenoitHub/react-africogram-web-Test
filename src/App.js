@@ -79,8 +79,8 @@ export default function App() {
   switch (window.controller) {
     case 'home.c.js':
       // home page
-       () => {
-        //return (
+       function HomePage() {
+        return (
           <div id="homeP">
             <div className="notLoggedIn" style={{ display: 'none' }}>
               <IndexHead />
@@ -101,8 +101,9 @@ export default function App() {
             <SignInModalBox />
             <VerifyAccountModalBox />
           </div>
-        //);
+        );
        }
+       return <HomePage />
     case 'terms.c.js':
       // terms of service
       return (
