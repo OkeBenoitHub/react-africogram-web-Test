@@ -1,15 +1,5 @@
 import React from "react";
-import FooterBox from "pages/home/index/indexFoot.tpl.js";
-
-export default function _404Template() {
-  return (
-    <div>
-      <_404Main />
-    </div>
-  );
-}
-
-function _404Main() {
+export default function _404Main() {
   const mainContentStyle = {
       backgroundColor: "#fff",
       width: "100%",
@@ -40,7 +30,6 @@ function _404Main() {
                   </div>
                 </div>
               </div>
-              <FooterBox />
             </div>
           </div>
         </div>

@@ -1,23 +1,3 @@
-import React from "react";
-import IndexHead from "pages/home/index/indexHead.tpl.js";
-import _404Template from "pages/404/404.tpl.js";
-import SignInModalBox from "pagelets/signin/signIn.tpl.js";
-
-export default function _404Page() {
-  return (
-    <div id="_404P">
-      <IndexHead />
-      <div className="notLoggedIn" style={{ display: "none" }}>
-          <_404Template />
-      </div>
-      <div className="loggedIn" style={{ display: "none" }}>
-          <_404Template />
-      </div>
-      <SignInModalBox />
-    </div>
-  );
-}
-
 // set up page controller js
 window.setUp404ControllerJs = function(isUserLoggedIn) {
     if(window.controller == "404.c.js") {

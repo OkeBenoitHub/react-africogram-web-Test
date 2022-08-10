@@ -1,15 +1,5 @@
 import React from 'react';
-import FooterBox from './indexFoot.tpl.js';
-
-export default function TermsTemplate() {
-  return (
-    <div>
-      <TermsMain />
-    </div>
-  );
-}
-
-function TermsMain() {
+export default function TermsMain() {
   const mainContentStyle = {
     backgroundColor: '#fff',
     width: '100%',
@@ -27,7 +17,6 @@ function TermsMain() {
                   <TermsOfServiceText />
                 </div>
               </div>
-              <FooterBox />
             </div>
           </div>
         </div>

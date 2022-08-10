@@ -1,6 +1,4 @@
 import React from "react";
-import ".../css/indexFoot.css";
-
 export default function FooterBox() {
   return (
     <div style={{width: "100%"}}>

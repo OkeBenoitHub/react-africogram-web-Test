@@ -1,7 +1,5 @@
 import React from "react";
-import "css/home.tpl.css";
-
-export default function HomeTemplate() {
+export default function HomeMain() {
   return (
     <div>
         <div class="w3-container w3-content" style={{maxWidth:"1400px", marginTop: "60px"}}>

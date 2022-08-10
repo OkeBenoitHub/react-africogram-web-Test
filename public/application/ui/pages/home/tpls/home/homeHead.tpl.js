@@ -1,8 +1,4 @@
 import React from "react";
-import FeedbackModal from "ui/pagelets/feedback/feedback.tpl.js";
-import ReportIssueModal from "ui/pagelets/reports/reportIssue.tpl.js";
-import "css/homeHead.css";
-
 export default function HomeHead() {
   return(
     <div id="homeHeader">        
@@ -56,8 +52,6 @@ export default function HomeHead() {
               <a href="javascript:void(0);" class="w3-bar-item w3-button w3-padding-large signOut">Sign Out</a>
             </div>
         </div>
-        <FeedbackModal />
-        <ReportIssueModal />
     </div>
   )
 }

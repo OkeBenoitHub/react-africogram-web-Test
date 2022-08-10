@@ -1,13 +1,4 @@
 import React from "react";
-import FooterBox from "./indexFoot.tpl.js";
-
-export default function GetStartedTemplate() {
-  return (
-    <div>
-      <GetStartedMain />
-    </div>
-  );
-}
 function GetStartedMain() {
     const mainContentStyle = {
         backgroundColor: "#fff",
@@ -73,7 +64,6 @@ function GetStartedMain() {
                     <div class="ui divider"></div>
                 </div>
               </div>
-              <FooterBox />
             </div>
           </div>
         </div>

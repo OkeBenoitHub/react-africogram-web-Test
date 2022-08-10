@@ -1,37 +1,3 @@
-import React from "react";
-import IndexHead from "index/indexHead.tpl.js";
-import IndexTemplate from "tpls/index/index.tpl.js";
-import HomeHead from "tpls/home/homeHead.tpl.js";
-import HomeTemplate from "tpls/home/home.tpl.js";
-import GetStartedTemplate from "/ui/pagelets/getstarted/getStarted.tpl.js";
-import SignInModalBox from "ui/pagelets/signin/signIn.tpl.js";
-import VerifyAccountModalBox from "ui/pagelets/verifyaccount/verifyAccount.tpl.js";
-
-export default function HomePage() {
-  if(window.controller == "home.c.js") {
-  return (
-    <div id="homeP">
-      <div className="notLoggedIn" style={{ display: "none" }}>
-            <IndexHead />
-            <IndexTemplate />
-      </div>
-      <div className="loggedIn" style={{ display: "none" }}>
-           <div className="getStarted" style={{ display: "none" }}>
-                <IndexHead />
-                <GetStartedTemplate />
-           </div>
-           <div className="mainHome" style={{ display: "none" }}>
-                <HomeHead />
-                <HomeTemplate />
-           </div>
-      </div>
-      <SignInModalBox />
-      <VerifyAccountModalBox />
-    </div>
-  );
-  }
-}
-
 // set up page controller js
 window.setUpHomePageControllerJs = function(isUserLoggedIn) {
     if(window.controller == "home.c.js") {

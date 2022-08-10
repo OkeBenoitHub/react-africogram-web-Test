@@ -1,6 +1,4 @@
 import React from "react";
-import "../css/indexHead.css";
-
 export default function IndexHead() {
   return (
     <div id="indexHeader">

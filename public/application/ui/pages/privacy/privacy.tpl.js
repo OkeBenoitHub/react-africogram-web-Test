@@ -1,15 +1,6 @@
 import React from 'react';
-import FooterBox from '/home/index/indexFoot.tpl.js';
 
-export default function PrivacyTemplate() {
-  return (
-    <div>
-      <PrivacyMain />
-    </div>
-  );
-}
-
-function PrivacyMain() {
+export default function PrivacyMain() {
   const mainContentStyle = {
     backgroundColor: '#fff',
     width: '100%',
@@ -27,7 +18,6 @@ function PrivacyMain() {
                   <PrivacyPolicyText />
                 </div>
               </div>
-              <FooterBox />
             </div>
           </div>
         </div>
