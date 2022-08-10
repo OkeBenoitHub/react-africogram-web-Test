@@ -1,7 +1,7 @@
 import React from "react";
-import IndexHead from "";
-import _404Template from "404.tpl.js";
-import SignInModalBox from "../views/tpls/modals/signIn.tpl.js";
+import IndexHead from "pages/home/index/indexHead.tpl.js";
+import _404Template from "pages/404/404.tpl.js";
+import SignInModalBox from "pagelets/signin/signIn.tpl.js";
 
 export default function _404Page() {
   return (

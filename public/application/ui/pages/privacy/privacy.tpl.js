@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterBox from './indexFoot.tpl.js';
+import FooterBox from '/home/index/indexFoot.tpl.js';
 
 export default function PrivacyTemplate() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import IndexHead from "tpls/indexHead.tpl.js";
-import PrivacyTemplate from "../views/tpls/privacy.tpl.js";
-import SignInModalBox from "../views/tpls/modals/signIn.tpl.js";
+import IndexHead from "pages/home/index/indexHead.tpl.js";
+import PrivacyTemplate from "pages/privacy/privacy.tpl.js";
+import SignInModalBox from "pagelets/signin/signIn.tpl.js";
 
 export default function PrivacyPolicyPage() {
   return (

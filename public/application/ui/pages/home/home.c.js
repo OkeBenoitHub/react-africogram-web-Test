@@ -1,5 +1,5 @@
 import React from "react";
-import IndexHead from "tpls/index/indexHead.tpl.js";
+import IndexHead from "index/indexHead.tpl.js";
 import IndexTemplate from "tpls/index/index.tpl.js";
 import HomeHead from "tpls/home/homeHead.tpl.js";
 import HomeTemplate from "tpls/home/home.tpl.js";
