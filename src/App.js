@@ -9,6 +9,10 @@ import "../public/utils/firebase/FirebaseStorageUtil.js" // firebase Storage uti
 import "../public/utils/firebase/FirebaseAuthUtil.js"; // firebase auth util
 import "../public/application/models/userData.js"; // user data
 import "./app.css";
+
+var path = require('path');
+alert(path);
+
 /**
  * import ui pages
  */

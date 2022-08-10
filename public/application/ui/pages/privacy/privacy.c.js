@@ -1,5 +1,5 @@
 import React from "react";
-import IndexHead from "../views/tpls/indexHead.tpl.js";
+import IndexHead from "tpls/indexHead.tpl.js";
 import PrivacyTemplate from "../views/tpls/privacy.tpl.js";
 import SignInModalBox from "../views/tpls/modals/signIn.tpl.js";
 
