@@ -1,5 +1,5 @@
 import React from 'react';
-import '../public/application/components/AppConsts.c.js'; // constants component
+import '../public/components/AppConsts.c.js'; // constants component
 import '../public/utils/MainUtil.js'; // main util
 import '../public/utils/UrlProcessingUtil.js'; // url proceessing util
 import '../public/utils/EmailUtil.js'; // email util
