@@ -16,6 +16,9 @@ import './app.css';
  * import ui page controllers
  */
  import '../public/application/ui/pages/home/home.c.js';
+ import '../public/application/ui/pages/terms/terms.c.js';
+ import '../public/application/ui/pages/privacy/privacy.c.js';
+ import '../public/application/ui/pages/404/404.c.js';
 
 
 /**
@@ -76,8 +79,8 @@ export default function App() {
   switch (window.controller) {
     case 'home.c.js':
       // home page
-      () => {
-        return (
+       () => {
+        //return (
           <div id="homeP">
             <div className="notLoggedIn" style={{ display: 'none' }}>
               <IndexHead />
@@ -98,14 +101,14 @@ export default function App() {
             <SignInModalBox />
             <VerifyAccountModalBox />
           </div>
-        );
-      }
+        //);
+       }
     case 'terms.c.js':
       // terms of service
       return (
         <div id="termsP">
-          <IndexHead />
           <div className="notLoggedIn" style={{ display: 'none' }}>
+            <IndexHead />
             <TermsMain />
           </div>
           <div className="loggedIn" style={{ display: 'none' }}>
