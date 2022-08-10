@@ -3,7 +3,7 @@ import '../public/application/components/AppConsts.c.js'; // constants component
 import '../public/utils/MainUtil.js'; // main util
 import '../public/utils/UrlProcessingUtil.js'; // url proceessing util
 import '../public/utils/EmailUtil.js'; // email util
-import '../public/application/components/Email.c.js'; // email component
+import '../public/application/controllers/Email.c.js'; // email component
 import '../public/utils/firebase/FirebaseInitUtil.js'; // firebase init config
 import '../public/utils/firebase/FirestoreDbUtil.js'; // firestore DB util
 import '../public/utils/firebase/FirebaseStorageUtil.js'; // firebase Storage util
@@ -11,42 +11,60 @@ import '../public/utils/firebase/FirebaseAuthUtil.js'; // firebase auth util
 import '../public/application/models/userData.js'; // user data
 import './app.css';
 
-/**
- * import ui templates controllers
+/******************************
+ * import ui controllers
  */
+// home
 import '../public/application/controllers/home/home.c.js';
-import '../public/application/controllers/terms/terms.c.js';
-import '../public/application/controllers/privacy/privacy.c.js';
-import '../public/application/controllers/404/404.c.js';
-
 import '../public/application/controllers/home/feedback.c.js';
 import '../public/application/controllers/home/reportIssue.c.js';
-import '../public/application/controllers/index/verifyAccount.c.js';
 import '../public/application/controllers/home/getStarted.c.js';
+
+// index
 import '../public/application/controllers/index/signUp.c.js';
 import '../public/application/controllers/index/signIn.c.js';
+import '../public/application/controllers/index/verifyAccount.c.js';
 
-/**
- * import ui templates styles
+// terms and privacy
+import '../public/application/controllers/terms/terms.c.js';
+import '../public/application/controllers/privacy/privacy.c.js';
+
+// 404
+import '../public/application/controllers/404/404.c.js';
+
+
+/*******************************
+ * import ui styles
  */
-import '../public/application/ui/templates/index/css/indexHead.css';
-import '../public/application/ui/templates/index/css/index.tpl.css';
+// home
 import '../public/application/ui/templates/home/css/homeHead.css';
 import '../public/application/ui/templates/home/css/home.tpl.css';
 
-/**
+// index
+import '../public/application/ui/templates/index/css/indexHead.css';
+import '../public/application/ui/templates/index/css/index.tpl.css';
+
+
+/******************************
  * import ui templates
  */
-import IndexHead from '../public/application/ui/templates/index/tpls/indexHead.tpl.js';
-import IndexMain from '../public/application/ui/templates/index/tpls/index.tpl.js';
+// home
 import HomeMain from '../public/application/ui/templates/home/tpls/home.tpl.js';
 import HomeHead from '../public/application/ui/templates/home/tpls/homeHead.tpl.js';
-import GetStartedMain from '../public/application/ui/templates/getstarted/getStarted.tpl.js';
+import GetStartedMain from '../public/application/ui/templates/home/tpls/getStarted.tpl.js';
+
+// index
+import IndexHead from '../public/application/ui/templates/index/tpls/indexHead.tpl.js';
+import IndexMain from '../public/application/ui/templates/index/tpls/index.tpl.js';
+
+// terms and privacy
 import TermsMain from '../public/application/ui/templates/terms/terms.tpl.js';
 import PrivacyMain from '../public/application/ui/templates/privacy/privacy.tpl.js';
+
+// 404
 import _404Main from '../public/application/ui/templates/404/404.tpl.js';
 
-/**
+/*****************************
  * import ui modals
  */
 import SignInModalBox from '../public/application/ui/modals/signin/signIn.tpl.js';
