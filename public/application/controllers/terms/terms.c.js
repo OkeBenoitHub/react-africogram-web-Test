@@ -1,7 +1,7 @@
 // set up page controller js
 window.setUpTermsPageControllerJs = function(isUserLoggedIn) {
     if(window.controller == "terms.c.js") {
-        window.tempId = "terms";
+        window.tempId = "termsP";
         // load semantics ui js library
         if(typeof head !== "undefined") {
             head.js(semanticsUIjs, function() {
